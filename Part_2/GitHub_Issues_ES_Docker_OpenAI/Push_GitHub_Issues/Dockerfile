@@ -1,0 +1,1 @@
+FROM psp24scm04v/elasticsearch_vector:latest

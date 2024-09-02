@@ -1,0 +1,10 @@
+services:
+  elasticsearch:
+    image: psp24scm04v/elasticsearch_vector:multi
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - node.name=localhost
+      - network.host=0.0.0.0
+    ports:
+      - "9200:9200"
