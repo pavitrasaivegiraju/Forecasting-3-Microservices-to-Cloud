@@ -21,7 +21,7 @@ Step5: Follow this to create commit command :
 
 	 docker commit containerID YOUR-DOCKER-USERNAME/[REPOSITORY[:TAG]]
 
-	 For example : docker commit 6c31284597e6 dharapranavkaushik7/elasticsearch_vector:latest
+	 For example : docker commit 6c31284597e6 psp24scm04v/elasticsearch_vector:latest
 
 	 Note: If you will not mention a tag it will automatically give the tag as latest.
 
@@ -37,7 +37,7 @@ Step7: Push the Image to the Docker hub using the below command.
 
 docker push YOUR-DOCKER-USERNAME/[REPOSITORY[:TAG]]
 
-For example: docker push dharapranavkaushik7/elasticsearch_vector:latest
+For example: docker push psp24scm04v/elasticsearch_vector:latest
 
 Step8: We need to build the image to support multiple - platforms. 
 	
@@ -49,7 +49,7 @@ Step8: We need to build the image to support multiple - platforms.
 
 	    FROM YOUR-DOCKER-USERNAME/[REPOSITORY[:TAG]]
 	
-	    For example : FROM dharapranavkaushik7/elasticsearch_vector:latest
+	    For example : FROM psp24scm04v/elasticsearch_vector:latest
 	    
 
 Step8: Now we can build and push the image to docker hub, using the following command:
