@@ -11,13 +11,13 @@ Step2:
 - Open docker-compose.yml and update the docker image name with
 	YOUR-DOCKERHUB-USERNAME/[REPOSITORY[:TAG]] (This will be the image that you pushed to docker hub).
 	
-	For example : dharapranavkaushik7/elasticsearch_vector:multi
+	For example : psp24scm04v/elasticsearch_vector:multi
 
 Step3: Navigate to this directory and open the terminal/cmd and run following command:
 
 	docker-compose up -d
 
-	This will pull the image dharapranavkaushik7/elasticsearch_vector:multi from Docker hub and will run the container for it.
+	This will pull the image psp24scm04v/elasticsearch_vector:multi from Docker hub and will run the container for it.
 
 "docker-compose up" uses docker-compose.yml file that contains all the information about the image, such as services, port, volumes, etc.
 
@@ -27,7 +27,7 @@ Alternatively, you can also do :
 
 For example: 
 
-docker pull dharapranavkaushik7/elasticsearch_vector:multi
+docker pull psp24scm04v/elasticsearch_vector:multi
 
 2. docker run -d \
   -e "discovery.type=single-node" \
@@ -45,7 +45,7 @@ docker pull dharapranavkaushik7/elasticsearch_vector:multi
   -e "network.host=0.0.0.0" \
   -p 9200:9200 \
   --name elasticsearch \
-  dharapranavkaushik7/elasticsearch_vector:multi
+  psp24scm04v/elasticsearch_vector:multi
 
 Verify that elasticsearch is running and the data can be fetched
 
